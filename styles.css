@@ -2,20 +2,42 @@
     font-family: 'Press Start 2P', cursive;
 }
 .grid {
-    display: grid;
-    grid-template-columns: 320px 200px;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 320px 100px;
 }
 .right-column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 2px;
 }
 .game-board {
     border: solid 2px;
+    height: 500px;
+    width: 250px;
+    background-color: #8ec98e;
+    background-size: 25px 25px;
+    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
 }
 .play-button {
     background-color: #4caf50;
     font-size: 16px;
     padding: 15px 30px;
     cursor: pointer;
+}
+.instructions {
+    margin-left: 50px;
+    margin-top: 1px;
+}
+h1.instructions {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    line-height: 0.5;
+}
+p.instructions {
+    font-size: 50%;
+    line-height: 0.5;
 }
